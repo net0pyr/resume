@@ -1,0 +1,158 @@
+
+\documentclass[letterpaper,12pt]{article}
+
+%\usepackage{fontspec}
+%\usepackage{fontawesome}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english, russian]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{fontawesome5}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\mytitles}[2]{% \mytitles{<main>}{<sub>}
+  \noindent\makebox[\textwidth]{#1\hfill#2}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Зыков Иван Евгеньевич} \\ \vspace{3pt}
+    \mytitles{\faPhone \textbf{ +7(921)-070-90-63}}{\href{mailto:naviz2409@gmail.com}{\Letter \textbf{ naviz2409@gmail.com}}} \\ \vspace{3pt}
+    \mytitles{\href{https://github.com/net0pyr}{\faGithub \textbf{ net0pyr}}}{\href{https://t.me/net0pyr}{\faTelegram \textbf{ net0pyr}}}
+\end{center}
+
+
+\section{Образование}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Гимназия №24}{г. Архангельск}
+      {}{2012 -- 2019}
+    \resumeSubheading
+      {Архангельский государственный лицей им. М. В. Ломоносова}{г. Архангельск}
+      {Физико-математический класс}{2021 -- 2023}
+    \resumeSubheading
+      {Университет ИТМО}{г. Санкт-Петербург}
+      {Системное и прикладное программное обеспечение}{2023 -- н. в.}
+  \resumeSubHeadingListEnd
+
+
+\section{Достижения}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Шаг в будущее}{Победитель}
+      {Математика}{}
+
+    \resumeSubheading
+      {Шаг в будущее}{Призер}
+      {Программирование}{}
+
+    \resumeSubheading
+      {Региональный этап ВСОШ}{Победитель}
+      {Информатика}{}
+
+  \resumeSubHeadingListEnd
+
+\section{Проекты}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/net0pyr/prog_labs}{\textbf{Лабораторные работы по программированию} \faExternalLink}}{} \\ \vspace{10pt}
+
+      \resumeSubheading
+          {\href{https://github.com/net0pyr/zapisyakal}{\textbf{Мобильное приложения для подсчета каллорий и записи тренировок} \faExternalLink}}{}{В стадии разработки}{}
+        
+    \resumeSubHeadingListEnd
+
+
+\section{Технические навыки}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Языки программирования}{: Java, Python, C++, SQL (PostgreSQL), Kotlin, Bash} \\
+     \textbf{Инструменты}{: Git, Docker} \\
+    }}
+ \end{itemize}
+
+\section{Любимые учебные дисциплины}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Компьютерные сети} \\
+     \textbf{Линейная алгебра} \\
+     \textbf{Дискретная математика} \\
+     \textbf{Основы профессиональной деятельности}{: Unix и БЭВМ} \\
+     \textbf{Программирование}{: ООП на Java/Kotlin} \\
+    }}
+ \end{itemize}
+
+\end{document}
